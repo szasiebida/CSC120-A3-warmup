@@ -9,7 +9,7 @@ public class ConversationIntro {
   
   /** Returns an integer one larger than its input */
   public int plusOne(int n) {
-    // n = n+1;
+    n = n+1;
     return n;
   }
 
@@ -21,7 +21,7 @@ public class ConversationIntro {
   
   /** Returns an integer that is double its input */
   public int timesTwo(int n) {
-    return 0;
+    return 2*n;
   }
 
   /*
@@ -30,7 +30,7 @@ public class ConversationIntro {
   
   /** Returns the square of its input */
   public int squared(int n) {
-    return 0;
+    return n*n;
   }
 
   /*
@@ -39,7 +39,7 @@ public class ConversationIntro {
   
   /** Divides its input by seven, dropping remainders */
   public int intDivideBy7(int n) {
-    return 0;
+    return n/7;
   }
 
   /*
@@ -47,8 +47,8 @@ public class ConversationIntro {
    */
   
   /** Divides its input by 7 */
-  public double doubleDivideBy7(int n) {
-    return 0;
+  public double doubleDivideBy7(double n) {
+    return n/7;
   }
 
   /*
@@ -63,11 +63,11 @@ public class ConversationIntro {
   /** Returns true if its input is prime */
   public static boolean isPrime(int n) {
     boolean isPrime = (n > 1); // one, zero, and negatives not prime
-    /*for (int i = 2; i <= Math.sqrt(n); i++) {
+    for (int i = 2; i <= Math.sqrt(n); i++) {
         if (n%i == 0) {
             isPrime = false;
         }
-    }*/
+    }
     return isPrime;
   }
 
@@ -77,7 +77,8 @@ public class ConversationIntro {
   
   /** Returns true if its input is even */
   public boolean isEven(int n) {
-    return false;
+    boolean isEven= n%2==0;
+    return isEven;
   }
 
   /*
