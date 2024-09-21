@@ -93,8 +93,7 @@ public class ConversationIntro {
   
   /** Returns true if its input is a comma */
   public static boolean isComma(String s) {
-    //return s.equals(",");
-    return (s == ",");
+    return s.equals(",");
   }
 
   /*
@@ -102,7 +101,14 @@ public class ConversationIntro {
    */
   
   /** Returns true if its input is one of:  .,?! */
-  public boolean isPunctuation(String s) {
+  public static boolean isPunctuation(String s) {
+    boolean comma= s.equals(",");
+    boolean period= s.equals(".");
+    boolean question=s.equals("?");
+    boolean exclaim=s.equals("!");
+    if (comma||period||question||exclaim){
+      return true;
+    }
     return false;
   }
 
