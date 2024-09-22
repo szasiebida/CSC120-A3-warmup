@@ -118,6 +118,11 @@ public class ConversationIntro {
   
   /** Returns its input, unless it is "I" or "you", which switch */
   public String mirrorWord(String s) {
+    if (s.equals("you")){
+      s="I";
+    } else if (s.equals("I")) {
+      s="you";
+    }
     return s;
   }
 
@@ -132,9 +137,9 @@ public class ConversationIntro {
   /** Returns an array of whole numbers up to n */
   public static int[] wholeNumbers(int n) {
     int[] arr = new int[n]; // allocate space for the array
-    //for (int i = 0; i < n; i++) {
-    //  arr[i] = i+1;
-    //}
+    for (int i = 0; i < n; i++) {
+    arr[i] = i+1;
+    }
     return arr;
   }
 
@@ -146,6 +151,9 @@ public class ConversationIntro {
   /** Returns an array of squares from 1 to n*n */
   public static int[] squares(int n) {
     int[] arr = new int[n]; // allocate space for the array
+    for (int i=0; i<n; i++){
+    arr[i]=(i+1)*(i+1);
+    }
     return arr;
   }
 }
